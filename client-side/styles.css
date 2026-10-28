@@ -10,11 +10,11 @@ body{
     width: 100%;
     height: 80vh;  
 }
-.hero h1{
+.hero h1, .cadastro h1{
     font-size: 20vh;
     text-align: center;
 }
-.hero p{
+.hero p, .cadastro p{
     text-align: center;
     margin-top: -40px;
     margin-bottom: 40px;
@@ -37,7 +37,7 @@ body{
     color: #000;
     box-shadow: 6px 10px 14px #717171;
 }
-a:hover{
+.hero a:hover{
     background-color: #a3a2a2;
 }
 footer{
@@ -57,5 +57,52 @@ footer p{
 /* === ESTILIZAÇÃO PAGINA INDEX */
 
 /* === ESTILIZAÇÃO PAGINA CADASTRO */
-
+nav{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #989898 1px solid;    
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180vh;
+}
+.cadastro form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    border: #a2a1a1 1px solid;
+    padding: 5vw;
+    border-radius: 10px;
+    gap: 4vh;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+}
+.campos input, .campos select{
+    border-radius: 10px;
+    border: solid 1px #000;
+    padding: 1vh;
+    cursor: pointer;
+}
+.botao{
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(137, 165, 255);
+}
+.botao:hover{
+    background-color: rgb(108, 130, 204);
+}
 /* === ESTILIZAÇÃO PAGINA CADASTRO */
